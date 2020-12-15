@@ -1,5 +1,5 @@
 .users-wrapper {
-    background-color: #182f48;
+    background-color: #343333;
     min-height: 90vh;
     padding: 0 20px;
 }
@@ -8,9 +8,8 @@
     color: white;
     padding: 5px;
 }
-.all-and-chosen {
+.all-block {
     display: flex;
-
 }
 .all-users {
     border-radius: 10px;
