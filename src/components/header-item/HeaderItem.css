@@ -5,6 +5,9 @@
     cursor: pointer;
 }
 
-.header-item:hover {
+/*.header-item:hover {*/
+/*    color: #303030;*/
+/*}*/
+.active{
     color: #303030;
 }
