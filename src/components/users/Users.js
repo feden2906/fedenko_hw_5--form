@@ -6,7 +6,6 @@ import {withRouter} from "react-router-dom";
 import ShowUsers from "../show-users/ShowUsers";
 import Loading from "../../services/loading/Loading";
 
-
 class Users extends Component {
 
   state = {formInputValue: null, allUsers: null, user: null}
@@ -33,12 +32,17 @@ class Users extends Component {
   render() {
     const {allUsers, user} = this.state
     return (
+<<<<<<< HEAD
         <div className='users-wrapper'>
           <h2 className='text-users'>Users</h2>
           <div className='all-block'>
             <FilterForm find={this.findID} formUsers={this.formUsers}/>
           </div>
           {allUsers ? <ShowUsers user={user} allUsers={allUsers}/> : <Loading/>}
+=======
+        <div>
+
+>>>>>>> master
         </div>
     )
   }
