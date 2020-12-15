@@ -20,18 +20,23 @@ class Users extends Component {
   formUsers = React.createRef()
 
   findID = (e) => {
-    const {formInputValue: num, allUsers} = this.state
     e.preventDefault()
+
+    const {allUsers} = this.state
     const formInputValue = this.formUsers.current[0].value
-    this.setState({formInputValue})
-    if (allUsers && num) {
-      const user = allUsers.filter(user => String(user.id).includes(num))
-      this.setState({user})
+
+    if (allUsers && formInputValue) {
+
+      const user = allUsers.filter(user => user.id === +formInputValue)
+      this.setState({user,formInputValue})
     }
+
   }
 
   render() {
+
     const {allUsers, user} = this.state
+
     return (
         <div className='users-wrapper'>
           <h2 className='text-users'>Users</h2>
